@@ -84,6 +84,10 @@ nav li a {
 	color: #4aaaa5;
 }
 
+.social-icons img {
+	max-width: 50px;
+}
+
 footer {
 	clear: both;
 	background-color: #666;
