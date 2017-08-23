@@ -33,11 +33,15 @@ h1 {
 }
 
 h2 {
+	font-size: 1.8em;
+}
+
+h3 {
 	font-size: 1.2em;
 }
 
 footer {
-	font-size: .75em;
+	font-size: .65em;
 	color: #BEBEC0;
 }
 
@@ -58,17 +62,21 @@ a {
 /* Custom Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+body {
+	background: url("../images/ep_naturalwhite.png");
+}
+
 header {
+	height: 75px;
 	background-color: #fff;
 	border-bottom: 2px solid #ccc;
-	height: 75px;
 	overflow: hidden;
 }
 
 .logo {
-	float: left;
 	background-color: #4aaaa5;
 	padding: 23px;
+	float: left;
 }
 
 .logo h1 {
@@ -77,44 +85,57 @@ header {
 
 nav ul {
 	list-style: none;
-	margin: 0;
+	margin: 10;
 	padding: 0;
+	float: right;
 }
 
 nav li {
-	float: right;
+	float: left;
 }
 
 nav li a {
 	display: block;
+	line-height: 12px;
 	text-decoration: none;
 	text-align: center;
-	padding: 10px 10px;
+	border-right: 1px solid #777;
+	margin-top: 20px;
+	padding: 0 10px;
+}
+
+nav li:last-child a {
+	border-right: 0;
 }
 
 .content {
 	margin-top: 40px;
 }
 
-#about {
-	width: 75%;
-	float: left;
-	clear: both;
+#about, #connect {
 	background-color: #fff;
-	width: 650px;
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
 	padding: 20px;
+	margin-bottom: 40px;
 }
 
+hr {
+	border-top: 2px solid #BEBEC0 ;
+	width: 98%;
+}
 
-#about h1 {
+#about {
+	width: 650px;
+	float: left;
+}
+
+#about h2 {
 	padding: 10px;
-	color: #4aaaa5;
 }
 
 .headshot {
+	margin: 20px 20px 0px 0px;
 	float: left;
-	margin: 0 10px 10px 0px;
 }
 
 .headshot img {
@@ -122,25 +143,23 @@ nav li a {
 }
 
 #connect {
-	float: right;
-	color: #4aaaa5;
 	width: 270px;
-	border: 1px solid #ddd;
-	padding: 20px;
-	text-align: center;
+	float: right;
 }
 
+.social-icons {
+	text-align: center;
+}
 .social-icons img {
-	max-width: 50px;
+	max-width: 60px;
 	margin: 5px 5px;
 }
 
 footer {
-	clear: both;
-	background-color: #666;
-	border-top: 10px solid #4aaaa5;
-	text-align: center;
 	height: 75px;
+	text-align: center;
+	background-color: #666;
+	border-top: 8px solid #4aaaa5;
 }
 
 footer p {
