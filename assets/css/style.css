@@ -50,6 +50,11 @@ a {
 }
 
 
+
+.button {
+	font-size: .8em;
+}
+
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -65,6 +70,8 @@ a {
 body {
 	background: url("../images/ep_naturalwhite.png");
 }
+
+/*** Header ***/
 
 header {
 	height: 75px;
@@ -85,7 +92,7 @@ header {
 
 nav ul {
 	list-style: none;
-	margin: 10;
+	margin-top: 12px;
 	padding: 0;
 	float: right;
 }
@@ -108,14 +115,13 @@ nav li:last-child a {
 	border-right: 0;
 }
 
-.content {
-	margin-top: 40px;
-}
+/*** Body ***/
 
-#about, #connect {
+#about, #contact, #connect {
 	background-color: #fff;
 	border: 2px solid #ddd;
 	padding: 20px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -124,12 +130,12 @@ hr {
 	width: 98%;
 }
 
-#about {
+#about, #contact {
 	width: 650px;
 	float: left;
 }
 
-#about h2 {
+#about h2, #contact h2 {
 	padding: 10px;
 }
 
@@ -154,6 +160,60 @@ hr {
 	max-width: 60px;
 	margin: 5px 5px;
 }
+
+.social-icons img:hover {
+	transform: scale(1.1);
+	transition: transform .25s;
+}
+
+/*** Form ***/
+
+input[type="email"],
+input[type="text"],
+textarea,
+select {
+	height: 30px;
+	width: 100%;
+  	padding: 6px 10px;
+  	border: 1px solid #D1D1D1;
+  	border-radius: 4px;
+}
+
+textarea {
+	height: 150px;
+	max-width: 620px;
+  	padding-top: 6px;
+  	padding-bottom: 6px; 
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  	border: 1px solid #4aaaa5;
+  	outline: 0; 
+}
+
+/*** Button ***/
+
+.button {
+	background-color: #4aaaa5;
+	color: #fff;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	cursor: pointer;
+  	padding: 10px 20px;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #3c8c88;
+	transform: scale(1.1);
+	transform-origin: left center;
+	transition: transform .25s, background-color .25s;
+}
+
+/* Footer */
 
 footer {
 	height: 75px;
