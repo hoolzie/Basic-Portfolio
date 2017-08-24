@@ -149,7 +149,7 @@ nav li:last-child a {
 	border: 2px solid #ddd;
 	padding: 20px;
 	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 140px;
 }
 
 hr {
@@ -175,10 +175,7 @@ hr {
 	max-width: 175px;
 }
 
-/*.row {
-	margin-top: 20px;
-}*/
-
+/*** Gallery ***/
 
 .gallery {
 	max-width: 650px;
@@ -214,64 +211,6 @@ hr {
 	text-align: center;
 }
 
-/*
-.project {
-	height: 200px;
-	width: 275px;
-	overflow: hidden;
-	position: relative;
-	z-index: 2;
-}
-
-.project a img {
-	position: absolute;
-	left: 50%;
-	margin-left: -100px;
-	z-index: 0;
-	opacity: .8;
-
-}
-
-.project > .banner {
-	height: 50px;
-	width: 100%;
-	position: absolute;
-	
-	left: 0px;
-	bottom: 50px;
-	background-color: rgba(60, 140, 136, 1);
-	z-index: 1;
-	overflow: hidden;
-}
-
-
-
-/*.gallery {
-	text-align: center;
-}
-
-.gallery img {
-	position: relative;
-	opacity: .8;
-	z-index: 0;
-}
-
-
-
-.row img:last-child {
-	margin-left: 20px;
-}
-
-.gallery img:last-child {
-	float: left;
-	margin-top: 20px;
-}
-
-
-
-
-
-*/
 #connect {
 	width: 270px;
 	float: right;
@@ -344,6 +283,9 @@ footer {
 	text-align: center;
 	background-color: #666;
 	border-top: 8px solid #4aaaa5;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }
 
 footer p {
