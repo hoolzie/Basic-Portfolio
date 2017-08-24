@@ -190,6 +190,11 @@ hr {
 	opacity: .8;
 }
 
+.gallery img:hover {
+	opacity: 1;
+	transition: opacity .5s;
+}
+
 .gallery > div {
 	position: relative;
 	float: left;
