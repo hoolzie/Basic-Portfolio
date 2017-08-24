@@ -40,6 +40,10 @@ h3 {
 	font-size: 1.2em;
 }
 
+h4 {
+	font-size: 1.1em;
+}
+
 footer {
 	font-size: .65em;
 	color: #BEBEC0;
@@ -49,11 +53,30 @@ a {
 	color: #777; 
 }
 
-
-
 .button {
 	font-size: .8em;
 }
+
+/* Colors
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+   * Teal color (used for headings and backgrounds): #4aaaa5
+   * Regular font color (used for paragraphs and all text besides the headings): #777
+   * Link (hover): #4aaaa5
+   * Main header background color: #fff
+   * Main header border color: #ccc
+   * Footer background color: #666
+   * Footer font color: #BEBEC0
+   * Main content background color: #fff
+   * Main content border color: #ddd
+   * HR color: #BEBEC0
+   * Form input borders: #D1D1D1
+   * Form input borders (focused): #4aaaa5
+   * Button: #4aaaa5
+   * Button (hover): ##3c8c88
+
+*/
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -111,13 +134,17 @@ nav li a {
 	padding: 0 10px;
 }
 
+nav li a:hover {
+	color: #4aaaa5;
+}
+
 nav li:last-child a {
 	border-right: 0;
 }
 
 /*** Body ***/
 
-#about, #contact, #connect {
+#about, #contact, #portfolio, #connect {
 	background-color: #fff;
 	border: 2px solid #ddd;
 	padding: 20px;
@@ -130,12 +157,12 @@ hr {
 	width: 98%;
 }
 
-#about, #contact {
+#about, #portfolio, #contact {
 	width: 650px;
 	float: left;
 }
 
-#about h2, #contact h2 {
+#about h2, #portfolio h2, #contact h2 {
 	padding: 10px;
 }
 
@@ -148,6 +175,98 @@ hr {
 	max-width: 175px;
 }
 
+/*.row {
+	margin-top: 20px;
+}*/
+
+
+.gallery {
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+.gallery img {
+	opacity: .8;
+}
+
+.gallery > div {
+	position: relative;
+	float: left;
+	padding: 10px;
+}
+
+.banner {
+	width: 260px;
+	position: absolute;
+	bottom: 30px;
+	background-color: rgba(60, 140, 136, 1);
+}
+
+.banner h4 {
+	color: #fff;
+	padding: 8px 0;
+	text-align: center;
+}
+
+/*
+.project {
+	height: 200px;
+	width: 275px;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+
+.project a img {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	z-index: 0;
+	opacity: .8;
+
+}
+
+.project > .banner {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	
+	left: 0px;
+	bottom: 50px;
+	background-color: rgba(60, 140, 136, 1);
+	z-index: 1;
+	overflow: hidden;
+}
+
+
+
+/*.gallery {
+	text-align: center;
+}
+
+.gallery img {
+	position: relative;
+	opacity: .8;
+	z-index: 0;
+}
+
+
+
+.row img:last-child {
+	margin-left: 20px;
+}
+
+.gallery img:last-child {
+	float: left;
+	margin-top: 20px;
+}
+
+
+
+
+
+*/
 #connect {
 	width: 270px;
 	float: right;
